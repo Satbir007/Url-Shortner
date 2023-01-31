@@ -1,0 +1,22 @@
+.url {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #271c6c;
+  color: #e1ebfd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 12px;
+  text-align: center;
+  
+}
+
+.url h2 {
+  font-size: 2rem;
+  color: #e1ebfd;
+  margin-bottom: 5px;
+}
+
+.url h3 {
+  color: #e1ebfd;
+  margin: 0;
+  font-size: 1rem;
+}
