@@ -1,18 +1,36 @@
 import { useState } from "react";
 import "../css/main.css";
+import { motion } from "framer-motion";
 
 const UrlInput = (props) => {
   const [value, setValue] = useState("");
 
   const handleClick = () => {
-    props.setWebLink(value);
-    setValue("");
+    if(value === '')
+    {
+      alert("Input is Empty");
+    }
+    else{
+      props.setWebLink(value);
+      setValue("");
+    }
+    
   };
   return (
     <div className="inputCard">
       <div className="title">
-        <h2>URL Shortener </h2>
+        <motion.h1
+         initial={{ y: -200 }}
+         animate={{ y: 0 }}
+         transition={{ type: "spring", duration: 0.5 }}
+         whileHover={{ scale: 1.1 }}
+        >URL Shortener </motion.h1>
       </div>
+      <motion.div
+      initial={{ y: 1000 }}
+      animate={{ y: 0 }}
+      transition={{ type: "spring", duration: 1 }}
+      >
       <input
         className="url-input"
         type="text"
@@ -20,9 +38,17 @@ const UrlInput = (props) => {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <button className="add-btn" onClick={handleClick}>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="add-btn"
+        onClick= {handleClick}
+      >
         Generate
-      </button>
+        </motion.button> 
+      </motion.div>
+      
+      
     </div>
   );
 };
