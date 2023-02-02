@@ -1,10 +1,11 @@
+import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
 import LoginContext from "../store/login-context";
-import React, { useContext } from "react";
+
 
 function MainNavigation() {
 
@@ -17,28 +18,26 @@ function MainNavigation() {
   }
 
   return (
-    <Navbar bg="light" variant="light">
-      <Container>
-        <Navbar.Brand href="#home">URL-Shortner</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-    
-          <Nav className="justify-content-end" style={{ width: "100%" }}>
-            <LinkContainer to="/">
-              <Nav.Link> Home </Nav.Link>
+    <Navbar bg="light" expand="lg">
+    <Container>
+      <Navbar.Brand href="#home">URL-Shortner</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className=" justify-content-end" style={{ width: "100%" }}>
+        <LinkContainer to="/">
+               <Nav.Link> Home </Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/About">
-              <Nav.Link>About Us</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to="/Contact">
-              <Nav.Link>Contact</Nav.Link>
-            </LinkContainer>
-          </Nav>
-          <Button onClick={(e)=>{handleSignOut(e)}}>Log Out</Button>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
- 
+             <LinkContainer to="/About">
+               <Nav.Link>About Us</Nav.Link>
+             </LinkContainer>
+             <LinkContainer to="/Contact">
+               <Nav.Link>Contact</Nav.Link>
+             </LinkContainer>
+          <Button variant='outline-dark' onClick={(e)=>{handleSignOut(e)}}>LogOut</Button>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
   );
 }
 
