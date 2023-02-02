@@ -1,0 +1,64 @@
+.url {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #271c6c;
+  color: #e1ebfd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 12px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.url h2 {
+  font-size: 1.2rem;
+  color: #e1ebfd;
+  margin-bottom: 5px;
+}
+
+.url h3 {
+  color: #e1ebfd;
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.url button.copied {
+  background: #271c6c;
+  color: #e1ebfd;
+}
+
+.url button {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem auto 0.1rem auto;
+
+  background-color: #e1ebfd;
+  color: #271c6c;
+  border: 2px solid #e1ebfd;
+  font-size: 0.7rem;
+  width: 4rem;
+  height: 1.5rem;
+  cursor: pointer;
+  box-shadow: 2px 4px 10px #271c6c;
+  border-radius: 10px;
+
+  align-items: center;
+}
+
+.url button:focus {
+  outline: none;
+}
+
+.url button:hover,
+.url button:active {
+  background-color: #460897;
+  border-color: #e1ebfd;
+  color: #e1ebfd;
+}
+
+.movies-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

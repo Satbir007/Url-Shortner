@@ -1,7 +1,6 @@
 import React from 'react';
-
 import Url from './Url';
-import classes from './UrlsList.module.css';
+import classes from "../css/Url.module.css";
 
 const UrlList = (props) => {
   return (
