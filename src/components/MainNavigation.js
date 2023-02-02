@@ -1,10 +1,21 @@
+import { Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import LoginContext from "../store/login-context";
+import React, { useContext } from "react";
 
 function MainNavigation() {
+
+  const [user, setUser] = useContext(LoginContext);
+
+  function handleSignOut(event) {
+    setUser({});
+    document.getElementById("signInDiv").hidden = false;
+    console.log("User value is ")
+  }
+
   return (
     <Navbar bg="light" variant="light">
       <Container>
@@ -23,6 +34,7 @@ function MainNavigation() {
               <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
           </Nav>
+          <Button onClick={(e)=>{handleSignOut(e)}}>Log Out</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -5,7 +5,7 @@ import AuthContext from "../store/auth-context";
 
 function Root() {
   const [urls, setUrls] = useState([]);
-  console.log(urls);
+ // console.log(urls);
   return (
     <AuthContext.Provider value={[urls, setUrls]}>
       <MainNavigation />
