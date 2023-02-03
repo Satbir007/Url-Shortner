@@ -30,48 +30,55 @@ const Contact = () => {
           Contact Us
         </motion.h1>
       </div>
-     
-      <form onSubmit={onSubmit} >
 
-          <motion.div initial={{ y: 1000 }}
-      animate={{ y: 0 }}
-      transition={{ type: "spring", duration: 1 }}>
-
-          
+      <form onSubmit={onSubmit}>
+        <motion.div
+          initial={{ y: 1000 }}
+          animate={{ y: 0 }}
+          transition={{ type: "spring", duration: 1 }}
+        >
           <label className="form-label title" htmlFor="name">
             <p>Name</p>
           </label>
           <input
             className="form-control form-input"
-            placeholder="Enter you Name" 
+            placeholder="Enter you Name"
             type="text"
             id="name"
             required
           />
-       
 
-        <label className="form-label title" htmlFor="email">
-          <p> Email</p>
-        </label>
-        <input
-          className="form-control form-input"
-          placeholder="Enter you Email" 
-          type="email"
-          id="email"
-          required
-        />
-        <label className="form-label title" htmlFor="message">
-          <p>Message</p>
-        </label>
-        <textarea className="form-control form-input" id="message" placeholder="Enter you message" required />
+          <label className="form-label title" htmlFor="email">
+            <p> Email</p>
+          </label>
+          <input
+            className="form-control form-input"
+            placeholder="Enter you Email"
+            type="email"
+            id="email"
+            required
+          />
+          <label className="form-label title" htmlFor="message">
+            <p>Message</p>
+          </label>
+          <textarea
+            className="form-control form-input"
+            id="message"
+            placeholder="Enter you message"
+            required
+          />
 
-        <motion.button whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }} className="add-btn" style={{marginTop:"2rem"}}type="submit">
-          {formStatus}
-        </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="add-btn"
+            style={{ marginTop: "2rem" }}
+            type="submit"
+          >
+            {formStatus}
+          </motion.button>
         </motion.div>
       </form>
-      
     </>
   );
 };
