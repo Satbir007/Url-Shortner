@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Url-Shortner/static/css/main.9cebc303.css",
-    "main.js": "/Url-Shortner/static/js/main.63a73bef.js",
+    "main.js": "/Url-Shortner/static/js/main.fac16ee7.js",
     "index.html": "/Url-Shortner/index.html",
     "main.9cebc303.css.map": "/Url-Shortner/static/css/main.9cebc303.css.map",
-    "main.63a73bef.js.map": "/Url-Shortner/static/js/main.63a73bef.js.map"
+    "main.fac16ee7.js.map": "/Url-Shortner/static/js/main.fac16ee7.js.map"
   },
   "entrypoints": [
     "static/css/main.9cebc303.css",
-    "static/js/main.63a73bef.js"
+    "static/js/main.fac16ee7.js"
   ]
 }
