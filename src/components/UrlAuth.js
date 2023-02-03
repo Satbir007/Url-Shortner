@@ -14,7 +14,7 @@ import LoginContext from "../store/login-context";
 const router = createBrowserRouter([
   {
     basename: "/Url-Shortner",
-    path: "/",
+    path: "/Url-Shortner",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
