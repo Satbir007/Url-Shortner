@@ -1,5 +1,9 @@
 # URL SHORTNER
 
+## Live Link
+
+[Click Here](https://satbir007.github.io/Url-Shortner) to run the app. (Contact admin for authentication)
+
 ## Features
 
 * Google authentication to show app content.
